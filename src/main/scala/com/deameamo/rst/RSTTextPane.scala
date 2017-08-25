@@ -265,7 +265,7 @@ class RSTTextPane extends JTextPane
           deleteWordItem.setEnabled(true)
         else
           deleteWordItem.setEnabled(false)
-        
+
         if(!Resource.getTree.getModel.asInstanceOf[RSTTreeModel].isSpanMarked(getSelectionStart, getSelectionEnd)) {
           addLexicalChainItem.setEnabled(true)
           deleteSpanItem.setEnabled(true)
@@ -274,14 +274,14 @@ class RSTTextPane extends JTextPane
           addLexicalChainItem.setEnabled(false)
           deleteSpanItem.setEnabled(false)
         }
-        
         setComponentPopupMenu(mainMenu)
       }
-      else
+      else {
         setComponentPopupMenu(chainMenu)
+      }
     }
     else {
-      setComponentPopupMenu(null)
+//      setComponentPopupMenu(null)
     }
   }
 

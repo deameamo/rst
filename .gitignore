@@ -2,7 +2,6 @@
 
 
 /.idea/
-/src/test/
 /RST.iml
-/articles/
 /tags/
+/target/
